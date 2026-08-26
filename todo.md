@@ -3,3 +3,9 @@
 - [x] Centralizar os principais eixos de composição, preservando contraste e hierarquia editorial.
 - [x] Ajustar o comportamento de navegação e seções para telas desktop, tablet e mobile.
 - [x] Validar a revisão com capturas de tela e compilação.
+- [x] Mapear textos, mensagens e chamadas que ainda usam alinhamento à esquerda.
+- [x] Centralizar os blocos de conteúdo da página principal de forma consistente.
+- [ ] Conferir a composição centralizada em desktop e mobile.
+- [ ] Verificar o repositório local e a configuração remota do GitHub.
+- [ ] Criar ou vincular um repositório privado do GitHub e enviar o código atual.
+- [ ] Confirmar o repositório remoto e o branch principal publicados.
