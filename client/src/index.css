@@ -175,3 +175,78 @@ img { display: block; max-width: 100%; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
   .hero-product-image { transform: none !important; }
 }
+
+/* Revisão central: cada cena mantém o universo Saloon Líquido com eixos centrados e fluidez responsiva. */
+.site-nav { height: 84px; justify-content: center; padding: 0 1rem; }
+.nav-wordmark { background: none; display: block; padding: 0; transition: filter 180ms ease, transform 180ms ease; }
+.nav-wordmark:hover { filter: brightness(1.12); transform: translateY(-1px); }
+.nav-wordmark:active { transform: scale(0.97); }
+.nav-wordmark img { height: auto; object-fit: contain; width: clamp(7.6rem, 10vw, 10.8rem); }
+
+.hero-scene { align-items: center; display: flex; flex-direction: column; padding: 9.1rem 1.25rem 4rem; text-align: center; }
+.hero-shade { background: linear-gradient(180deg, rgba(14, 10, 8, 0.94) 0%, rgba(14, 10, 8, 0.54) 52%, rgba(14, 10, 8, 0.9) 100%); }
+.hero-copy { align-items: center; display: flex; flex-direction: column; max-width: 44rem; }
+.hero-logo { margin-left: 0; }
+.hero-copy h1 { max-width: 9.8ch; }
+.hero-product-wrap { bottom: -3rem; left: 50%; max-width: min(48vw, 650px); right: auto; top: auto; transform: translateX(-50%); width: 46%; }
+.hero-scroll { bottom: 1.55rem; left: 50%; position: absolute; transform: translateX(-50%); }
+
+.manifesto-scene { align-items: center; display: flex; flex-direction: column; padding-left: 1.25rem; padding-right: 1.25rem; text-align: center; }
+.manifesto-scene::after { background: linear-gradient(180deg, rgba(37, 19, 15, 0.78) 0%, rgba(37, 19, 15, 0.18) 56%, rgba(37, 19, 15, 0.9) 100%); }
+.manifesto-copy { align-items: center; display: flex; flex-direction: column; max-width: 38rem; position: relative; z-index: 2; }
+.manifesto-body { max-width: 31rem; }
+.ingredient-orbit { align-self: auto; justify-self: auto; margin-top: 3rem; max-width: 26rem; width: min(100%, 28vw); z-index: 2; }
+
+.section-intro { align-items: center; display: flex; flex-direction: column; gap: 1.1rem; max-width: 48rem; text-align: center; }
+.section-intro .eyebrow { align-self: auto; padding-top: 0; }
+.section-intro > p:last-child { align-self: auto; margin: 0; max-width: 28rem; }
+
+.ritual-scene { display: flex; flex-direction: column; text-align: center; }
+.ritual-image { height: min(34rem, 50vw); margin: 2.2rem auto 0; max-width: 58rem; min-height: 27rem; width: calc(100% - 3rem); }
+.ritual-image-shade { background: linear-gradient(0deg, rgba(240, 214, 166, 0.8), transparent 54%); }
+.ritual-copy { align-items: center; display: flex; flex-direction: column; padding: clamp(3.3rem, 7vw, 6.7rem) 1.4rem clamp(4rem, 8vw, 7rem); }
+.ritual-list { text-align: left; width: 100%; }
+
+.gallery-title { align-items: center; display: flex; flex-direction: column; gap: 1rem; justify-content: center; text-align: center; }
+.gallery-title .eyebrow { padding-top: 0; }
+.gallery-title h2 { text-align: center; }
+.gallery-foot { justify-content: center; text-align: center; }
+.gallery-foot span { margin-right: 1.5rem; }
+
+.site-footer { flex-direction: column; justify-content: center; padding: 2.25rem 1.25rem; text-align: center; }
+
+.manifesto-scene, .selections-scene, .gallery-scene { border-bottom: 1px solid rgba(211, 38, 27, 0.28); }
+.section-intro::after, .gallery-title::after { background: linear-gradient(90deg, transparent, var(--ember), transparent); content: ""; height: 1px; margin-top: 0.65rem; width: min(15rem, 42vw); }
+.ritual-scene { background: linear-gradient(90deg, #120b08 0%, #120b08 9%, var(--brioche) 9%, var(--brioche) 91%, #120b08 91%, #120b08 100%); box-shadow: inset 0 2rem 3.8rem rgba(14, 10, 8, 0.52), inset 0 -2rem 3.8rem rgba(14, 10, 8, 0.52); }
+.ritual-scene::before { background: repeating-linear-gradient(105deg, transparent 0 6rem, rgba(83, 40, 24, 0.05) 6.1rem 6.35rem), radial-gradient(ellipse at 0% 44%, rgba(14, 10, 8, 0.8), transparent 24%), radial-gradient(ellipse at 100% 58%, rgba(211, 38, 27, 0.33), transparent 25%), linear-gradient(0deg, rgba(28, 13, 8, 0.32), transparent 32%); }
+.ritual-image { border: 1px solid rgba(181, 138, 60, 0.62); box-shadow: 0 20px 34px rgba(14, 10, 8, 0.32); }
+
+@media (max-width: 860px) {
+  .site-nav { height: 70px; }
+  .site-nav--solid { height: 62px; }
+  .hero-scene { min-height: 57rem; padding-top: 8rem; }
+  .hero-product-wrap { bottom: 2rem; max-width: 31rem; width: 75%; }
+  .manifesto-scene { min-height: 52rem; }
+  .ingredient-orbit { margin-top: 2.2rem; width: min(88%, 28rem); }
+  .ritual-image { height: 26rem; min-height: 0; width: calc(100% - 2.5rem); }
+  .ritual-copy { padding: 3.2rem 1.25rem 5rem; }
+  .gallery-title { margin-bottom: 2.2rem; }
+  .gallery-title h2 { margin-top: 0; text-align: center; }
+  .gallery-foot { align-items: center; }
+}
+
+@media (max-width: 560px) {
+  .site-nav { height: 66px; }
+  .site-nav--solid { height: 62px; }
+  .nav-wordmark img { width: 7rem; }
+  .hero-scene { min-height: 51rem; padding-top: 7.5rem; }
+  .hero-product-wrap { bottom: 1.65rem; width: 88%; }
+  .hero-description { max-width: 19rem; }
+  .ingredient-orbit { margin-top: 2rem; width: min(96%, 24rem); }
+  .gallery-foot { flex-direction: column; gap: 0.65rem; }
+  .gallery-foot span { margin-right: 0; max-width: none; }
+  .site-footer { align-items: center; flex-wrap: nowrap; }
+  .site-footer > p { flex-basis: auto; order: initial; }
+  .footer-links { margin-left: 0; }
+  .ritual-scene { background: linear-gradient(90deg, #120b08 0%, #120b08 4%, var(--brioche) 4%, var(--brioche) 96%, #120b08 96%, #120b08 100%); }
+}

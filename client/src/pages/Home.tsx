@@ -4,20 +4,18 @@
  */
 import { motion, useReducedMotion } from "framer-motion";
 import {
-  ArrowDownRight,
   ArrowUpRight,
   Flame,
   Instagram,
-  Menu,
   MessageCircle,
   MoveDown,
   Sparkles,
-  X,
 } from "lucide-react";
 import { useEffect, useState, type PointerEvent } from "react";
 
 const ASSETS = {
   logo: "/manus-storage/mock-brand-logo_d9eab87b.png",
+  wordmark: "/manus-storage/mock-wordmark_59e2fe3f.png",
   horn: "/manus-storage/mock-horn-mark_fc05411b.png",
   heroEnvironment: "/manus-storage/mock-hero-saloon-liquido_7c0db2bc.jpg",
   manifestoEnvironment: "/manus-storage/mock-manifesto-embers_5489b5be.jpg",
@@ -30,6 +28,8 @@ const ASSETS = {
   baconWide: "/manus-storage/mock-bacon-wide_20cc8bd0.jpg",
   baconClose: "/manus-storage/mock-bacon-close_ffdfb23a.jpg",
   baconVertical: "/manus-storage/mock-bacon-vertical_dbd88a9f.jpg",
+  gallerySix: "/manus-storage/mock-gallery-06_70b55c48.jpg",
+  galleryNine: "/manus-storage/mock-gallery-09_f1ccb8a1.jpg",
 };
 
 const whatsappUrl = "https://wa.me/5542988124834";
@@ -101,7 +101,6 @@ function HeroDepthImage() {
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
   const reducedMotion = useReducedMotion();
 
   useEffect(() => {
@@ -112,39 +111,15 @@ export default function Home() {
   }, []);
 
   const navTo = (id: string) => {
-    setMenuOpen(false);
     window.setTimeout(() => scrollToSection(id), 10);
   };
 
   return (
     <div className="site-shell">
       <header className={`site-nav ${scrolled ? "site-nav--solid" : ""}`}>
-        <button className="nav-brand" onClick={() => navTo("topo")} aria-label="Ir para o início da Mock Burguer">
-          <img src={ASSETS.horn} alt="" />
-          <span>MOCK<br /><em>BURGUER</em></span>
+        <button className="nav-wordmark" onClick={() => navTo("topo")} aria-label="Ir para o início da Mock Burguer">
+          <img src={ASSETS.wordmark} alt="Mock" />
         </button>
-
-        <nav className="nav-desktop" aria-label="Navegação principal">
-          <button onClick={() => navTo("manifesto")}>A essência</button>
-          <button onClick={() => navTo("selecoes")}>Seleções</button>
-          <button onClick={() => navTo("ritual")}>O ritual</button>
-        </nav>
-
-        <a className="nav-order" href={whatsappUrl} target="_blank" rel="noreferrer">
-          <span>Fazer pedido</span><ArrowUpRight size={16} />
-        </a>
-        <button className="nav-menu" onClick={() => setMenuOpen((open) => !open)} aria-label={menuOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={menuOpen}>
-          {menuOpen ? <X size={24} /> : <Menu size={25} />}
-        </button>
-
-        {menuOpen && (
-          <div className="mobile-menu">
-            <button onClick={() => navTo("manifesto")}>A essência <ArrowDownRight size={18} /></button>
-            <button onClick={() => navTo("selecoes")}>Seleções <ArrowDownRight size={18} /></button>
-            <button onClick={() => navTo("ritual")}>O ritual <ArrowDownRight size={18} /></button>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Fazer pedido <ArrowUpRight size={18} /></a>
-          </div>
-        )}
       </header>
 
       <main>
@@ -244,8 +219,8 @@ export default function Home() {
           <div className="gallery-title"><p className="eyebrow"><span>04</span> sem filtro</p><h2 id="gallery-heading">A realidade<br />já é <em>surreal.</em></h2></div>
           <div className="photo-river">
             <figure className="photo photo--a"><img src={ASSETS.baconWide} alt="Hambúrguer com bacon da Mock Burguer em uma tábua de madeira." loading="lazy" /></figure>
-            <figure className="photo photo--b"><img src={ASSETS.baconVertical} alt="Detalhe vertical de hambúrguer com bacon e molho da Mock Burguer." loading="lazy" /></figure>
-            <figure className="photo photo--c"><img src={ASSETS.classic} alt="Hambúrguer clássico da Mock Burguer sob luz quente." loading="lazy" /></figure>
+            <figure className="photo photo--b"><img src={ASSETS.gallerySix} alt="Retrato vertical de hambúrguer da Mock Burguer sob luz de brasa." loading="lazy" /></figure>
+            <figure className="photo photo--c"><img src={ASSETS.galleryNine} alt="Hambúrguer alto da Mock Burguer em enquadramento editorial." loading="lazy" /></figure>
             <figure className="photo photo--d"><img src={ASSETS.tower} alt="Hambúrguer alto da Mock Burguer com camadas de carne." loading="lazy" /></figure>
             <figure className="photo photo--e"><img src={ASSETS.doubleBurger} alt="Hambúrguer duplo da Mock Burguer com queijo derretido." loading="lazy" /></figure>
             <figure className="photo photo--f"><img src={ASSETS.baconClose} alt="Close de hambúrguer da Mock Burguer com bacon e molho." loading="lazy" /></figure>

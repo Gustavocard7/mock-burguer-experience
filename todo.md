@@ -1,0 +1,5 @@
+- [x] Publicar o wordmark horizontal fornecido para uso no cabeçalho.
+- [x] Substituir o emblema do cabeçalho por um cabeçalho centralizado com apenas a tipografia “MOCK”.
+- [x] Centralizar os principais eixos de composição, preservando contraste e hierarquia editorial.
+- [x] Ajustar o comportamento de navegação e seções para telas desktop, tablet e mobile.
+- [x] Validar a revisão com capturas de tela e compilação.
