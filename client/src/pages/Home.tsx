@@ -14,22 +14,22 @@ import {
 import { useEffect, useState, type PointerEvent } from "react";
 
 const ASSETS = {
-  logo: "/manus-storage/mock-brand-logo_d9eab87b.png",
-  wordmark: "/manus-storage/mock-wordmark_59e2fe3f.png",
-  horn: "/manus-storage/mock-horn-mark_fc05411b.png",
-  heroEnvironment: "/manus-storage/mock-hero-saloon-liquido_7c0db2bc.jpg",
-  manifestoEnvironment: "/manus-storage/mock-manifesto-embers_5489b5be.jpg",
-  portal: "/manus-storage/mock-portal-brasa_b58ea301.jpg",
-  heroBurger: "/manus-storage/mock-hero-burger_e9fb1dfd.jpg",
-  doubleBurger: "/manus-storage/mock-double-burger_ceaa2e77.jpg",
-  classic: "/manus-storage/mock-classic_96e578bc.jpg",
-  tower: "/manus-storage/mock-tower_230e2ee7.jpg",
-  glove: "/manus-storage/mock-glove_32ebf1d9.jpg",
-  baconWide: "/manus-storage/mock-bacon-wide_20cc8bd0.jpg",
-  baconClose: "/manus-storage/mock-bacon-close_ffdfb23a.jpg",
-  baconVertical: "/manus-storage/mock-bacon-vertical_dbd88a9f.jpg",
-  gallerySix: "/manus-storage/mock-gallery-06_70b55c48.jpg",
-  galleryNine: "/manus-storage/mock-gallery-09_f1ccb8a1.jpg",
+  logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/RZNTcgAefZbVtEOq.png",
+  wordmark: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/yRgUuxWiBDcXDxzD.png",
+  horn: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/UOVZjRhAthCOlrYX.png",
+  heroEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/bnikgKRyTCAwHhUa.jpg",
+  manifestoEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/gWdRSJWoybvghAnw.jpg",
+  portal: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/fVhoOQlhWZGxoXVv.jpg",
+  heroBurger: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/bTwhJlcTkXCqHieF.jpg",
+  doubleBurger: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/DpgosHhsqXoubKyq.jpg",
+  classic: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/uPQfERLVmOhVoToD.jpg",
+  tower: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/plZwDnlSdWlErjHe.jpg",
+  glove: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/MQxFbCoauZwCZuqy.jpg",
+  baconWide: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/ToStJNbedzUGNpHH.jpg",
+  baconClose: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/ZMFZRwkNAFqQLZho.jpg",
+  baconVertical: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/uWPoooLGsKHcouey.jpg",
+  gallerySix: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/IBAsnnHUyWARjXjK.jpg",
+  galleryNine: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/iosFstYQMGGRUldX.jpg",
 };
 
 const whatsappUrl = "https://wa.me/5542988124834";

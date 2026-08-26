@@ -9,3 +9,8 @@
 - [x] Verificar o repositório local e a configuração remota do GitHub.
 - [x] Criar ou vincular um repositório privado do GitHub e enviar o código atual.
 - [x] Confirmar o repositório remoto e o branch principal publicados.
+- [ ] Verificar se há integração ou autenticação ativa para publicação no Render.
+- [ ] Configurar o serviço do Render com o repositório privado e os comandos de build.
+- [ ] Confirmar a implantação e registrar a URL pública final.
+- [ ] Tornar os ativos visuais acessíveis por URLs públicas compatíveis com o Render.
+- [ ] Atualizar as referências de imagens e validar a publicação externa novamente.
