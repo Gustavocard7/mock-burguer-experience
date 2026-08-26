@@ -185,9 +185,11 @@ img { display: block; max-width: 100%; }
 
 .hero-scene { align-items: center; display: flex; flex-direction: column; padding: 9.1rem 1.25rem 4rem; text-align: center; }
 .hero-shade { background: linear-gradient(180deg, rgba(14, 10, 8, 0.94) 0%, rgba(14, 10, 8, 0.54) 52%, rgba(14, 10, 8, 0.9) 100%); }
-.hero-copy { align-items: center; display: flex; flex-direction: column; max-width: 44rem; }
+.hero-copy { align-items: center; display: flex; flex-direction: column; margin-inline: auto; max-width: 44rem; text-align: center; width: min(100%, 44rem); }
 .hero-logo { margin-left: 0; }
-.hero-copy h1 { max-width: 9.8ch; }
+.hero-copy h1 { margin-inline: auto; max-width: 9.8ch; text-align: center; }
+.hero-description { margin-left: auto; margin-right: auto; text-align: center; }
+.hero-actions { justify-content: center; width: 100%; }
 .hero-product-wrap { bottom: -3rem; left: 50%; max-width: min(48vw, 650px); right: auto; top: auto; transform: translateX(-50%); width: 46%; }
 .hero-scroll { bottom: 1.55rem; left: 50%; position: absolute; transform: translateX(-50%); }
 
