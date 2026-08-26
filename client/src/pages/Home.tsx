@@ -234,7 +234,7 @@ export default function Home() {
         <section className="closing-scene" aria-labelledby="closing-heading">
           <img className="closing-environment" src={ASSETS.portal} alt="" aria-hidden="true" />
           <div className="closing-content">
-            <img src={ASSETS.horn} alt="" className="closing-mark" />
+            <img src={ASSETS.wordmark} alt="Mock" className="closing-wordmark" />
             <p className="eyebrow">última chamada</p>
             <h2 id="closing-heading">A brasa<br />está <em>acesa.</em></h2>
             <p>Quando estiver pronto para deixar a fome decidir, a Mock está do outro lado.</p>

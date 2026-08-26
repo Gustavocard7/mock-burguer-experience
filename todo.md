@@ -23,3 +23,6 @@
 - [x] Escolher três fotografias com enquadramentos e contextos de produto distintos.
 - [x] Atualizar os cards de “Escolha seu excesso” com a nova curadoria.
 - [x] Validar o bloco revisado e sincronizar a alteração no GitHub.
+- [x] Remover o símbolo da chamada final que não pertence à marca.
+- [x] Inserir o wordmark “MOCK” acima da chamada final e validar a composição.
+- [x] Sincronizar a revisão no GitHub.
