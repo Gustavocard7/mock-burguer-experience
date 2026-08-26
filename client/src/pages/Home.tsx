@@ -32,7 +32,7 @@ const ASSETS = {
   galleryNine: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/iosFstYQMGGRUldX.jpg",
   barbecue: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/BTjgcYSmMHtGrBNE.png",
   supreme: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/wOEGrcKKajAnpOAq.png",
-  bacon: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/YyFIsxlRdinkWExr.png",
+  bacon: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/VguUsuxASVjIHfOL.jpg",
   classico: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/xDdgcXOtjMZevMwK.png",
 };
 

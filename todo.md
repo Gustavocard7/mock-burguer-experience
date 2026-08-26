@@ -34,3 +34,6 @@
 - [x] Associar os quatro novos retratos a Barbecue, Supreme, Bacon e Clássico.
 - [x] Publicar os quatro retratos e atualizar a seleção de produtos oficial.
 - [x] Validar a curadoria de quatro lanches e sincronizar a revisão no GitHub.
+- [x] Publicar o retrato oficial enviado para o lanche Bacon.
+- [x] Atualizar o card Bacon e validar a seleção revisada.
+- [x] Sincronizar a correção de imagem no GitHub.
