@@ -20,3 +20,6 @@
 - [x] Mapear e substituir todas as menções ao preparo na chapa.
 - [x] Restaurar o wordmark “MOCK” no cabeçalho com tratamento minimalista.
 - [x] Validar a narrativa na brasa e sincronizar a revisão no GitHub.
+- [x] Escolher três fotografias com enquadramentos e contextos de produto distintos.
+- [x] Atualizar os cards de “Escolha seu excesso” com a nova curadoria.
+- [x] Validar o bloco revisado e sincronizar a alteração no GitHub.

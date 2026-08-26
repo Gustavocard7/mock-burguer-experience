@@ -41,20 +41,23 @@ const burgers = [
     copy: "Carne na brasa, pão tostado e tudo o que importa quando a fome fala alto.",
     image: ASSETS.classic,
     alt: "Hambúrguer clássico da Mock Burguer sobre tábua de madeira.",
+    imagePosition: "50% center",
   },
   {
     number: "02",
     name: "Duplo. Sem ponto final.",
     copy: "Duas camadas de desejo, queijo derretido e presença que não pede licença.",
-    image: ASSETS.doubleBurger,
-    alt: "Hambúrguer duplo e alto da Mock Burguer iluminado por néon vermelho.",
+    image: ASSETS.baconWide,
+    alt: "Hambúrguer com bacon da Mock Burguer em uma tábua de madeira.",
+    imagePosition: "38% center",
   },
   {
     number: "03",
     name: "A pilha proibida",
     copy: "Quando o exagero é tratado como receita e servido com as duas mãos.",
-    image: ASSETS.tower,
-    alt: "Hambúrguer alto com várias camadas de carne e bacon da Mock Burguer.",
+    image: ASSETS.glove,
+    alt: "Hambúrguer da Mock Burguer segurado por uma mão com luva preta.",
+    imagePosition: "58% center",
   },
 ];
 
@@ -197,7 +200,7 @@ export default function Home() {
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ delay: index * 0.09, duration: 0.65, ease: [0.23, 1, 0.32, 1] }}
               >
-                <div className="card-image-wrap"><img src={burger.image} alt={burger.alt} loading="lazy" /><span>{burger.number}</span></div>
+                <div className="card-image-wrap"><img src={burger.image} alt={burger.alt} loading="lazy" style={{ objectPosition: burger.imagePosition }} /><span>{burger.number}</span></div>
                 <div className="card-content"><h3>{burger.name}</h3><p>{burger.copy}</p><a href={whatsappUrl} target="_blank" rel="noreferrer">Pedir na brasa <ArrowUpRight size={17} /></a></div>
               </motion.article>
             ))}
