@@ -47,9 +47,9 @@ const burgers = [
     number: "02",
     name: "Duplo. Sem ponto final.",
     copy: "Duas camadas de desejo, queijo derretido e presença que não pede licença.",
-    image: ASSETS.baconWide,
-    alt: "Hambúrguer com bacon da Mock Burguer em uma tábua de madeira.",
-    imagePosition: "38% center",
+    image: ASSETS.baconVertical,
+    alt: "Retrato vertical de hambúrguer com bacon da Mock Burguer.",
+    imagePosition: "50% center",
   },
   {
     number: "03",
@@ -208,7 +208,7 @@ export default function Home() {
         </section>
 
         <section id="ritual" className="ritual-scene" aria-labelledby="ritual-heading">
-          <div className="ritual-image"><img src={ASSETS.glove} alt="Hambúrguer da Mock Burguer sendo segurado com uma luva preta." loading="lazy" /><div className="ritual-image-shade" /></div>
+          <div className="ritual-image"><img src={ASSETS.doubleBurger} alt="Hambúrguer duplo da Mock Burguer em iluminação quente." loading="lazy" /><div className="ritual-image-shade" /></div>
           <div className="ritual-copy">
             <p className="eyebrow"><span>03</span> o ritual da brasa</p>
             <h2 id="ritual-heading">Quando a fome<br />merece <em>cerimônia.</em></h2>
@@ -225,8 +225,6 @@ export default function Home() {
             <figure className="photo photo--b"><img src={ASSETS.gallerySix} alt="Retrato vertical de hambúrguer da Mock Burguer sob luz de brasa." loading="lazy" /></figure>
             <figure className="photo photo--c"><img src={ASSETS.galleryNine} alt="Hambúrguer alto da Mock Burguer em enquadramento editorial." loading="lazy" /></figure>
             <figure className="photo photo--d"><img src={ASSETS.tower} alt="Hambúrguer alto da Mock Burguer com camadas de carne." loading="lazy" /></figure>
-            <figure className="photo photo--e"><img src={ASSETS.doubleBurger} alt="Hambúrguer duplo da Mock Burguer com queijo derretido." loading="lazy" /></figure>
-            <figure className="photo photo--f"><img src={ASSETS.baconClose} alt="Close de hambúrguer da Mock Burguer com bacon e molho." loading="lazy" /></figure>
           </div>
           <div className="gallery-foot"><span>mock burguer / a fome não é discreta</span><a href="https://www.instagram.com/mockburguer/" target="_blank" rel="noreferrer">ver no Instagram <Instagram size={17} /></a></div>
         </section>
