@@ -29,3 +29,5 @@
 - [x] Definir o favicon com o símbolo oficial da Mock Burguer.
 - [x] Mapear imagens repetidas e redistribuir retratos distintos pelas cenas.
 - [x] Validar a identidade visual revisada e sincronizar o GitHub.
+- [x] Centralizar título, texto, tags e retrato da seção de manifesto.
+- [x] Validar o manifesto corrigido e sincronizar a revisão no GitHub.
