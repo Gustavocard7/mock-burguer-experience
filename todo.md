@@ -14,3 +14,6 @@
 - [x] Confirmar a implantação e registrar a URL pública final.
 - [x] Tornar os ativos visuais acessíveis por URLs públicas compatíveis com o Render.
 - [x] Atualizar as referências de imagens e validar a publicação externa novamente.
+- [x] Reduzir a repetição do wordmark entre cabeçalho e hero com um símbolo minimalista.
+- [x] Reconstruir o rodapé com o logotipo oficial e uma assinatura de marca consistente.
+- [x] Validar a nova hierarquia visual e sincronizar a revisão no GitHub.

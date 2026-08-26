@@ -217,6 +217,20 @@ img { display: block; max-width: 100%; }
 
 .site-footer { flex-direction: column; justify-content: center; padding: 2.25rem 1.25rem; text-align: center; }
 
+/* Assinatura de marca: símbolo isolado no cabeçalho, selo oficial apenas no hero e rodapé. */
+.nav-wordmark { display: none; }
+.nav-symbol { align-items: center; background: rgba(14, 10, 8, 0.42); border: 1px solid rgba(181, 138, 60, 0.48); border-radius: 50%; display: flex; height: 42px; justify-content: center; padding: 0; transition: background 180ms ease, border-color 180ms ease, transform 180ms ease; width: 42px; }
+.nav-symbol:hover { background: rgba(211, 38, 27, 0.16); border-color: var(--gold); transform: translateY(-1px); }
+.nav-symbol:active { transform: scale(0.96); }
+.nav-symbol img { height: 29px; object-fit: contain; width: 29px; }
+.site-footer { background: radial-gradient(ellipse at 50% 0%, rgba(121, 35, 17, 0.42), transparent 54%), #090605; min-height: 19rem; overflow: hidden; position: relative; }
+.site-footer::before { border: 1px solid rgba(181, 138, 60, 0.32); border-bottom: 0; border-radius: 50% 50% 0 0; content: ""; height: 16rem; left: 50%; pointer-events: none; position: absolute; top: -11.6rem; transform: translateX(-50%); width: min(38rem, 88vw); }
+.site-footer::after { background: linear-gradient(90deg, transparent, rgba(211, 38, 27, 0.7), transparent); bottom: 2rem; content: ""; height: 1px; left: 50%; position: absolute; transform: translateX(-50%); width: min(16rem, 58vw); }
+.footer-official-logo { filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.58)); height: auto; margin: 0 auto 0.75rem; max-width: min(18rem, 60vw); position: relative; z-index: 1; }
+.footer-signature { color: rgba(240, 214, 166, 0.76); font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.1em; margin: 0; position: relative; text-transform: uppercase; z-index: 1; }
+.footer-links { margin-top: 0.45rem; }
+.footer-links { position: relative; z-index: 1; }
+
 /* Alinhamento editorial central: todas as mensagens da experiência seguem o mesmo eixo de leitura. */
 .manifesto-tags { justify-content: center; }
 .orbit-label { left: 50%; text-align: center; transform: translateX(-50%); width: max-content; }
@@ -253,7 +267,8 @@ img { display: block; max-width: 100%; }
 @media (max-width: 560px) {
   .site-nav { height: 66px; }
   .site-nav--solid { height: 62px; }
-  .nav-wordmark img { width: 7rem; }
+  .nav-symbol { height: 38px; width: 38px; }
+  .nav-symbol img { height: 26px; width: 26px; }
   .hero-scene { min-height: 51rem; padding-top: 7.5rem; }
   .hero-product-wrap { bottom: 1.65rem; width: 88%; }
   .hero-description { max-width: 19rem; }

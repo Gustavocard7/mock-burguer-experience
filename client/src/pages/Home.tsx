@@ -117,8 +117,8 @@ export default function Home() {
   return (
     <div className="site-shell">
       <header className={`site-nav ${scrolled ? "site-nav--solid" : ""}`}>
-        <button className="nav-wordmark" onClick={() => navTo("topo")} aria-label="Ir para o início da Mock Burguer">
-          <img src={ASSETS.wordmark} alt="Mock" />
+        <button className="nav-symbol" onClick={() => navTo("topo")} aria-label="Ir para o início da Mock Burguer">
+          <img src={ASSETS.horn} alt="Símbolo Mock Burguer" />
         </button>
       </header>
 
@@ -198,7 +198,7 @@ export default function Home() {
                 transition={{ delay: index * 0.09, duration: 0.65, ease: [0.23, 1, 0.32, 1] }}
               >
                 <div className="card-image-wrap"><img src={burger.image} alt={burger.alt} loading="lazy" /><span>{burger.number}</span></div>
-                <div className="card-content"><h3>{burger.name}</h3><p>{burger.copy}</p><a href={whatsappUrl} target="_blank" rel="noreferrer">Consultar no WhatsApp <ArrowUpRight size={17} /></a></div>
+                <div className="card-content"><h3>{burger.name}</h3><p>{burger.copy}</p><a href={whatsappUrl} target="_blank" rel="noreferrer">Pedir na brasa <ArrowUpRight size={17} /></a></div>
               </motion.article>
             ))}
           </div>
@@ -241,8 +241,8 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="footer-brand"><img src={ASSETS.horn} alt="" /><span>MOCK<br /><em>BURGUER</em></span></div>
-        <p>Feito na brasa, servido com personalidade.</p>
+        <img className="footer-official-logo" src={ASSETS.logo} alt="Mock Burguer" />
+        <p className="footer-signature">Feito na brasa, servido com personalidade.</p>
         <div className="footer-links"><a href="https://www.instagram.com/mockburguer/" target="_blank" rel="noreferrer">Instagram</a><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp</a></div>
       </footer>
     </div>
