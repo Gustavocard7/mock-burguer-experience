@@ -17,3 +17,6 @@
 - [x] Reduzir a repetição do wordmark entre cabeçalho e hero com um símbolo minimalista.
 - [x] Reconstruir o rodapé com o logotipo oficial e uma assinatura de marca consistente.
 - [x] Validar a nova hierarquia visual e sincronizar a revisão no GitHub.
+- [x] Mapear e substituir todas as menções ao preparo na chapa.
+- [x] Restaurar o wordmark “MOCK” no cabeçalho com tratamento minimalista.
+- [x] Validar a narrativa na brasa e sincronizar a revisão no GitHub.

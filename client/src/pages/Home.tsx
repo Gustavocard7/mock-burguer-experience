@@ -38,7 +38,7 @@ const burgers = [
   {
     number: "01",
     name: "O clássico sem desculpa",
-    copy: "Carne na chapa, pão tostado e tudo o que importa quando a fome fala alto.",
+    copy: "Carne na brasa, pão tostado e tudo o que importa quando a fome fala alto.",
     image: ASSETS.classic,
     alt: "Hambúrguer clássico da Mock Burguer sobre tábua de madeira.",
   },
@@ -60,7 +60,7 @@ const burgers = [
 
 const ritual = [
   ["01", "Escolha", "Carne, pão e combinações pensadas para ficar na memória."],
-  ["02", "Chapa", "Calor, crosta e tempo. O que é bom não sai com pressa."],
+  ["02", "Brasa", "Fogo, crosta e tempo. O que é bom não sai com pressa."],
   ["03", "Impacto", "Chega alto, suculento e sem qualquer intenção de passar despercebido."],
 ];
 
@@ -117,8 +117,8 @@ export default function Home() {
   return (
     <div className="site-shell">
       <header className={`site-nav ${scrolled ? "site-nav--solid" : ""}`}>
-        <button className="nav-symbol" onClick={() => navTo("topo")} aria-label="Ir para o início da Mock Burguer">
-          <img src={ASSETS.horn} alt="Símbolo Mock Burguer" />
+        <button className="nav-wordmark" onClick={() => navTo("topo")} aria-label="Ir para o início da Mock Burguer">
+          <img src={ASSETS.wordmark} alt="Mock" />
         </button>
       </header>
 
@@ -137,7 +137,7 @@ export default function Home() {
               transition={{ duration: 0.65, ease: [0.23, 1, 0.32, 1] }}
             />
             <motion.p className="eyebrow" initial={reducedMotion ? false : { opacity: 0, y: 14 }} animate={reducedMotion ? undefined : { opacity: 1, y: 0 }} transition={{ delay: 0.12, duration: 0.55 }}>
-              <Flame size={14} /> a chapa não negocia
+              <Flame size={14} /> na brasa, sem negociação
             </motion.p>
             <motion.h1 id="hero-heading" initial={reducedMotion ? false : { opacity: 0, y: 28 }} animate={reducedMotion ? undefined : { opacity: 1, y: 0 }} transition={{ delay: 0.18, duration: 0.8, ease: [0.23, 1, 0.32, 1] }}>
               Fome em<br /><span>volume máximo.</span>
@@ -207,7 +207,7 @@ export default function Home() {
         <section id="ritual" className="ritual-scene" aria-labelledby="ritual-heading">
           <div className="ritual-image"><img src={ASSETS.glove} alt="Hambúrguer da Mock Burguer sendo segurado com uma luva preta." loading="lazy" /><div className="ritual-image-shade" /></div>
           <div className="ritual-copy">
-            <p className="eyebrow"><span>03</span> o ritual da chapa</p>
+            <p className="eyebrow"><span>03</span> o ritual da brasa</p>
             <h2 id="ritual-heading">Quando a fome<br />merece <em>cerimônia.</em></h2>
             <div className="ritual-list">
               {ritual.map(([number, title, copy]) => <motion.div className="ritual-item" key={number} initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.45 }} transition={{ duration: 0.55 }}><span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div></motion.div>)}
@@ -233,7 +233,7 @@ export default function Home() {
           <div className="closing-content">
             <img src={ASSETS.horn} alt="" className="closing-mark" />
             <p className="eyebrow">última chamada</p>
-            <h2 id="closing-heading">A chapa<br />está <em>acesa.</em></h2>
+            <h2 id="closing-heading">A brasa<br />está <em>acesa.</em></h2>
             <p>Quando estiver pronto para deixar a fome decidir, a Mock está do outro lado.</p>
             <a className="button-hot button-hot--large" href={whatsappUrl} target="_blank" rel="noreferrer">Falar com a Mock <MessageCircle size={19} /></a>
           </div>

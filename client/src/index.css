@@ -217,9 +217,13 @@ img { display: block; max-width: 100%; }
 
 .site-footer { flex-direction: column; justify-content: center; padding: 2.25rem 1.25rem; text-align: center; }
 
-/* Assinatura de marca: símbolo isolado no cabeçalho, selo oficial apenas no hero e rodapé. */
-.nav-wordmark { display: none; }
+/* Assinatura de marca: wordmark discreto no cabeçalho, selo oficial no hero e rodapé. */
+.nav-wordmark { background: none; display: block; padding: 0; transition: filter 180ms ease, transform 180ms ease; }
+.nav-wordmark:hover { filter: brightness(1.12); transform: translateY(-1px); }
+.nav-wordmark:active { transform: scale(0.97); }
+.nav-wordmark img { filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.42)); height: auto; object-fit: contain; width: clamp(6.8rem, 9vw, 9.8rem); }
 .nav-symbol { align-items: center; background: rgba(14, 10, 8, 0.42); border: 1px solid rgba(181, 138, 60, 0.48); border-radius: 50%; display: flex; height: 42px; justify-content: center; padding: 0; transition: background 180ms ease, border-color 180ms ease, transform 180ms ease; width: 42px; }
+.nav-symbol { display: none; }
 .nav-symbol:hover { background: rgba(211, 38, 27, 0.16); border-color: var(--gold); transform: translateY(-1px); }
 .nav-symbol:active { transform: scale(0.96); }
 .nav-symbol img { height: 29px; object-fit: contain; width: 29px; }
@@ -267,8 +271,7 @@ img { display: block; max-width: 100%; }
 @media (max-width: 560px) {
   .site-nav { height: 66px; }
   .site-nav--solid { height: 62px; }
-  .nav-symbol { height: 38px; width: 38px; }
-  .nav-symbol img { height: 26px; width: 26px; }
+  .nav-wordmark img { width: 7rem; }
   .hero-scene { min-height: 51rem; padding-top: 7.5rem; }
   .hero-product-wrap { bottom: 1.65rem; width: 88%; }
   .hero-description { max-width: 19rem; }
