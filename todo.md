@@ -31,3 +31,6 @@
 - [x] Validar a identidade visual revisada e sincronizar o GitHub.
 - [x] Centralizar título, texto, tags e retrato da seção de manifesto.
 - [x] Validar o manifesto corrigido e sincronizar a revisão no GitHub.
+- [x] Associar os quatro novos retratos a Barbecue, Supreme, Bacon e Clássico.
+- [x] Publicar os quatro retratos e atualizar a seleção de produtos oficial.
+- [x] Validar a curadoria de quatro lanches e sincronizar a revisão no GitHub.

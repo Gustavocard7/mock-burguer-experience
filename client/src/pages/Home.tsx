@@ -30,6 +30,10 @@ const ASSETS = {
   baconVertical: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/uWPoooLGsKHcouey.jpg",
   gallerySix: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/IBAsnnHUyWARjXjK.jpg",
   galleryNine: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/iosFstYQMGGRUldX.jpg",
+  barbecue: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/BTjgcYSmMHtGrBNE.png",
+  supreme: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/wOEGrcKKajAnpOAq.png",
+  bacon: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/YyFIsxlRdinkWExr.png",
+  classico: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/xDdgcXOtjMZevMwK.png",
 };
 
 const whatsappUrl = "https://wa.me/5542988124834";
@@ -37,27 +41,35 @@ const whatsappUrl = "https://wa.me/5542988124834";
 const burgers = [
   {
     number: "01",
-    name: "O clássico sem desculpa",
-    copy: "Carne na brasa, pão tostado e tudo o que importa quando a fome fala alto.",
-    image: ASSETS.classic,
-    alt: "Hambúrguer clássico da Mock Burguer sobre tábua de madeira.",
+    name: "Barbecue",
+    copy: "Carne na brasa, molho barbecue intenso, bacon e camadas que deixam marca.",
+    image: ASSETS.barbecue,
+    alt: "Hambúrguer Barbecue da Mock Burguer com bacon, molho escuro e queijo.",
     imagePosition: "50% center",
   },
   {
     number: "02",
-    name: "Duplo. Sem ponto final.",
-    copy: "Duas camadas de desejo, queijo derretido e presença que não pede licença.",
-    image: ASSETS.baconVertical,
-    alt: "Retrato vertical de hambúrguer com bacon da Mock Burguer.",
+    name: "Supreme",
+    copy: "Duas carnes na brasa, queijo derretido e uma presença impossível de ignorar.",
+    image: ASSETS.supreme,
+    alt: "Hambúrguer Supreme da Mock Burguer com duas carnes e queijo derretido.",
     imagePosition: "50% center",
   },
   {
     number: "03",
-    name: "A pilha proibida",
-    copy: "Quando o exagero é tratado como receita e servido com as duas mãos.",
-    image: ASSETS.glove,
-    alt: "Hambúrguer da Mock Burguer segurado por uma mão com luva preta.",
-    imagePosition: "58% center",
+    name: "Bacon",
+    copy: "Bacon crocante, queijo e carne na brasa para quem veio pelo excesso.",
+    image: ASSETS.bacon,
+    alt: "Hambúrguer Bacon da Mock Burguer com bacon crocante e queijo.",
+    imagePosition: "50% center",
+  },
+  {
+    number: "04",
+    name: "Clássico",
+    copy: "Carne na brasa, queijo, alface e tomate. O essencial feito sem atalhos.",
+    image: ASSETS.classico,
+    alt: "Hambúrguer Clássico da Mock Burguer com alface, tomate e queijo.",
+    imagePosition: "50% center",
   },
 ];
 
@@ -188,7 +200,7 @@ export default function Home() {
           <div className="section-intro">
             <p className="eyebrow"><span>02</span> seleções</p>
             <h2 id="selections-heading">Escolha<br />seu <em>excesso.</em></h2>
-            <p>Cada criação muda o seu eixo por alguns minutos. Consulte a disponibilidade e peça a sua preferida.</p>
+            <p>Quatro receitas na brasa, cada uma com uma identidade própria. Escolha a sua e peça sem modéstia.</p>
           </div>
           <div className="burger-deck">
             {burgers.map((burger, index) => (
