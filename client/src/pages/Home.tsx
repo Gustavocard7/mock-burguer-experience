@@ -107,7 +107,7 @@ function HeroDepthImage() {
       aria-label="Fotografia do hambúrguer em profundidade"
     >
       <div className="hero-product-shadow" aria-hidden="true" />
-      <img className="hero-product-image" src={ASSETS.heroBurger} alt="Hambúrguer da Mock Burguer sobre uma tábua, em iluminação de néon." />
+      <img className="hero-product-image hero-product-image--supreme" src={ASSETS.supreme} alt="Hambúrguer Supreme da Mock Burguer com duas carnes e queijo derretido." />
       <div className="hero-product-glow" aria-hidden="true" />
       <span className="hero-product-note" aria-hidden="true"><Sparkles size={14} /> arraste o olhar</span>
     </div>

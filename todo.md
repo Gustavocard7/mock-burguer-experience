@@ -37,3 +37,6 @@
 - [x] Publicar o retrato oficial enviado para o lanche Bacon.
 - [x] Atualizar o card Bacon e validar a seleção revisada.
 - [x] Sincronizar a correção de imagem no GitHub.
+- [x] Selecionar uma imagem de hero mais imponente que o item Bacon.
+- [x] Atualizar o hero com o novo retrato e ajustar seu enquadramento.
+- [x] Validar o hero revisado e sincronizar a alteração no GitHub.
