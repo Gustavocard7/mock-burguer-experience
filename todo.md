@@ -113,6 +113,8 @@
 - [x] Arquivar no GitHub os ativos de produção que ainda não estejam preservados.
 - [x] Validar o build e documentar a recuperação autônoma do site.
 - [x] Confirmar a sincronização final no GitHub e a publicação no Render.
+- [x] Corrigir o loop da faixa de imagens para eliminar saltos visuais.
+- [x] Validar a rolagem contínua em desktop e mobile e sincronizar a atualização.
 - [ ] Definir dez frases e composições minimalistas para a série do Mock BBQ.
 - [ ] Gerar dez variações com foto e logo oficiais.
 - [ ] Validar e arquivar permanentemente as dez artes no GitHub.

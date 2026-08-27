@@ -155,11 +155,15 @@ export default function Home() {
 
         <section className="hero-photo-ticker" aria-label="Fotos dos hambúrgueres da Mock Burguer">
           <div className="hero-photo-ticker-track">
-            {[...burgers, ...burgers].map((burger, index) => (
-              <figure className="hero-photo-ticker-item" key={`ticker-${burger.number}-${index}`} aria-hidden={index >= burgers.length}>
-                <img src={burger.image} alt={index < burgers.length ? burger.alt : ""} loading="lazy" style={{ objectPosition: burger.imagePosition }} />
-                <figcaption>{burger.name}</figcaption>
-              </figure>
+            {[0, 1].map((groupIndex) => (
+              <div className="hero-photo-ticker-group" key={`ticker-group-${groupIndex}`} aria-hidden={groupIndex === 1}>
+                {burgers.map((burger) => (
+                  <figure className="hero-photo-ticker-item" key={`ticker-${groupIndex}-${burger.number}`}>
+                    <img src={burger.image} alt={groupIndex === 0 ? burger.alt : ""} loading="lazy" style={{ objectPosition: burger.imagePosition }} />
+                    <figcaption>{burger.name}</figcaption>
+                  </figure>
+                ))}
+              </div>
             ))}
           </div>
         </section>
