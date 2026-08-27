@@ -66,3 +66,7 @@
 - [x] Integrar o cenário gerado ao hero e ajustar o contraste do texto.
 - [x] Publicar o cenário de brasas em uma URL externa compatível com o Render.
 - [x] Validar o hero revisado e sincronizar a atualização no GitHub.
+- [x] Adicionar uma camada de fumaça em movimento sutil ao cenário de churrasqueira.
+- [x] Remover o painel retangular da foto de hero e integrar o produto ao fundo.
+- [x] Conectar o botão principal a uma seção de cardápio completo para pedidos.
+- [x] Validar a experiência em desktop e mobile e sincronizar a atualização no GitHub.

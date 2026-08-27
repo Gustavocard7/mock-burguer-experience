@@ -38,6 +38,9 @@ const ASSETS = {
 
 const whatsappUrl = "https://wa.me/5542988124834";
 
+const orderUrl = (burgerName: string) =>
+  `${whatsappUrl}?text=${encodeURIComponent(`Olá, quero pedir o ${burgerName}.`)}`;
+
 const burgers = [
   {
     number: "01",
@@ -150,6 +153,11 @@ export default function Home() {
           <img className="hero-environment" src={ASSETS.heroEnvironment} alt="" aria-hidden="true" />
           <div className="hero-shade" aria-hidden="true" />
           <div className="hero-grid" aria-hidden="true" />
+          <div className="hero-smoke-layer" aria-hidden="true">
+            <span className="hero-smoke hero-smoke--one" />
+            <span className="hero-smoke hero-smoke--two" />
+            <span className="hero-smoke hero-smoke--three" />
+          </div>
           <div className="hero-copy">
             <motion.img
               className="hero-logo"
@@ -169,7 +177,7 @@ export default function Home() {
               Hambúrgueres artesanais feitos com personalidade. Sem filtro, sem modéstia e sem uma única camada sem propósito.
             </motion.p>
             <motion.div className="hero-actions" initial={reducedMotion ? false : { opacity: 0, y: 14 }} animate={reducedMotion ? undefined : { opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.6 }}>
-              <a className="button-hot" href={whatsappUrl} target="_blank" rel="noreferrer">Quero sentir a brasa <ArrowUpRight size={18} /></a>
+              <button className="button-hot" type="button" onClick={() => scrollToSection("cardapio")}>Ver cardápio completo <MoveDown size={18} /></button>
               <button className="button-quiet" onClick={() => scrollToSection("selecoes")}>Ver as seleções <MoveDown size={17} /></button>
             </motion.div>
           </div>
@@ -227,7 +235,7 @@ export default function Home() {
                   <p className="card-description">{burger.description}</p>
                   <div className="card-order">
                     <strong>{burger.price}</strong>
-                    <a href={whatsappUrl} target="_blank" rel="noreferrer">Pedir <ArrowUpRight size={17} /></a>
+                    <a href={orderUrl(burger.name)} target="_blank" rel="noreferrer">Pedir <ArrowUpRight size={17} /></a>
                   </div>
                 </div>
               </motion.article>
@@ -235,10 +243,34 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="cardapio" className="menu-order-scene" aria-labelledby="menu-order-heading">
+          <div className="menu-order-intro">
+            <p className="eyebrow"><span>03</span> cardápio para pedir</p>
+            <h2 id="menu-order-heading">Escolha o seu<br /><em>próximo excesso.</em></h2>
+            <p>Todos os lanches da Mock, preparados na brasa e prontos para pedir em um toque.</p>
+          </div>
+          <div className="menu-order-list">
+            {burgers.map((burger) => (
+              <article className="menu-order-item" key={`menu-${burger.number}`}>
+                <span className="menu-order-number">{burger.number}</span>
+                <div className="menu-order-copy">
+                  <div className="menu-order-heading-row">
+                    <h3>{burger.name}</h3>
+                    <strong>{burger.price}</strong>
+                  </div>
+                  <p className="menu-order-ingredients">{burger.ingredients}</p>
+                  <p className="menu-order-description">{burger.description}</p>
+                </div>
+                <a className="menu-order-action" href={orderUrl(burger.name)} target="_blank" rel="noreferrer">Pedir agora <ArrowUpRight size={17} /></a>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="ritual" className="ritual-scene" aria-labelledby="ritual-heading">
           <div className="ritual-image"><img src={ASSETS.doubleBurger} alt="Hambúrguer duplo da Mock Burguer em iluminação quente." loading="lazy" /><div className="ritual-image-shade" /></div>
           <div className="ritual-copy">
-            <p className="eyebrow"><span>03</span> o ritual da brasa</p>
+            <p className="eyebrow"><span>04</span> o ritual da brasa</p>
             <h2 id="ritual-heading">Quando a fome<br />merece <em>cerimônia.</em></h2>
             <div className="ritual-list">
               {ritual.map(([number, title, copy]) => <motion.div className="ritual-item" key={number} initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.45 }} transition={{ duration: 0.55 }}><span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div></motion.div>)}
@@ -247,7 +279,7 @@ export default function Home() {
         </section>
 
         <section className="gallery-scene" aria-labelledby="gallery-heading">
-          <div className="gallery-title"><p className="eyebrow"><span>04</span> sem filtro</p><h2 id="gallery-heading">A realidade<br />já é <em>surreal.</em></h2></div>
+          <div className="gallery-title"><p className="eyebrow"><span>05</span> sem filtro</p><h2 id="gallery-heading">A realidade<br />já é <em>surreal.</em></h2></div>
           <div className="photo-river">
             <figure className="photo photo--a"><img src={ASSETS.baconWide} alt="Hambúrguer com bacon da Mock Burguer em uma tábua de madeira." loading="lazy" /></figure>
             <figure className="photo photo--b"><img src={ASSETS.gallerySix} alt="Retrato vertical de hambúrguer da Mock Burguer sob luz de brasa." loading="lazy" /></figure>
