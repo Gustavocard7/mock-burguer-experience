@@ -17,7 +17,7 @@ const ASSETS = {
   wordmark: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/yRgUuxWiBDcXDxzD.png",
   horn: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/UOVZjRhAthCOlrYX.png",
   heroEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/TxjfeDwpDgFWdggT.jpg",
-  manifestoEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/gWdRSJWoybvghAnw.jpg",
+  manifestoEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/FUllcmGKpjIKRLKX.jpg",
   portal: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/fVhoOQlhWZGxoXVv.jpg",
   heroBurger: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/bTwhJlcTkXCqHieF.jpg",
   doubleBurger: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/DpgosHhsqXoubKyq.jpg",

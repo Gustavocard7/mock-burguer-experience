@@ -77,3 +77,9 @@
 - [x] Validar a nova abertura em desktop e mobile e sincronizar a atualização no GitHub.
 - [x] Ajustar o enquadramento da foto do hero para mobile, mantendo produto e texto em equilíbrio.
 - [x] Validar a nova composição mobile e sincronizar a atualização no GitHub.
+- [x] Registrar os ativos visuais publicados e suas URLs permanentes no repositório.
+- [x] Documentar a sincronização obrigatória do código e de cada novo ativo no GitHub.
+- [x] Confirmar a publicação atual no Render após a sincronização.
+- [x] Criar um fundo de labaredas de fogo com área segura para o manifesto.
+- [x] Substituir o cenário metálico da seção de manifesto pelo fundo de fogo.
+- [x] Validar o manifesto com fogo em desktop e mobile e sincronizar a atualização no GitHub.

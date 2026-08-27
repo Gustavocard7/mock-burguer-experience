@@ -113,8 +113,8 @@ img { display: block; max-width: 100%; }
 
 /* Manifesto */
 .manifesto-scene { background: var(--mahogany); display: grid; grid-template-columns: 1.1fr 0.9fr; isolation: isolate; min-height: 48rem; overflow: hidden; padding: clamp(5rem, 10vw, 10rem) clamp(1.25rem, 8vw, 10rem); position: relative; }
-.manifesto-environment { height: 100%; inset: 0; object-fit: cover; opacity: 0.76; position: absolute; width: 100%; z-index: -2; }
-.manifesto-scene::after { background: linear-gradient(90deg, rgba(37, 19, 15, 0.76), rgba(37, 19, 15, 0.16) 58%, rgba(37, 19, 15, 0.92)); content: ""; inset: 0; position: absolute; z-index: -1; }
+.manifesto-environment { filter: saturate(1.08) contrast(1.05); height: 100%; inset: 0; object-fit: cover; object-position: center; opacity: 0.94; position: absolute; width: 100%; z-index: -2; }
+.manifesto-scene::after { background: radial-gradient(ellipse 58% 74% at 48% 49%, rgba(14, 7, 5, 0.82) 0%, rgba(14, 7, 5, 0.63) 46%, rgba(14, 7, 5, 0.14) 100%), linear-gradient(90deg, rgba(14, 7, 5, 0.3), transparent 53%, rgba(14, 7, 5, 0.36)); content: ""; inset: 0; position: absolute; z-index: -1; }
 .manifesto-copy { align-self: center; max-width: 34rem; }
 .manifesto-copy .eyebrow { margin-bottom: 1.05rem; }
 .manifesto-copy h2, .section-intro h2, .ritual-copy h2, .gallery-title h2, .closing-content h2 { font-size: clamp(4rem, 7.6vw, 8.5rem); line-height: 0.8; }
@@ -123,7 +123,7 @@ img { display: block; max-width: 100%; }
 .manifesto-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.7rem; }
 .manifesto-tags span { border: 1px solid rgba(240, 214, 166, 0.3); color: var(--brioche); font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.07em; padding: 0.55rem 0.65rem; text-transform: uppercase; }
 .ingredient-orbit { align-self: center; aspect-ratio: 0.86; justify-self: end; max-width: 30rem; perspective: 900px; position: relative; width: min(100%, 31vw); }
-.ingredient-orbit::before { border: 1px solid rgba(181, 138, 60, 0.6); border-radius: 50%; content: ""; inset: 7%; position: absolute; transform: rotateX(62deg) rotateZ(-18deg); }
+.ingredient-orbit::before { display: none; }
 .ingredient-orbit img { clip-path: polygon(5% 8%, 98% 0, 91% 95%, 2% 100%); height: 86%; left: 7%; object-fit: cover; object-position: center; position: absolute; top: 8%; transform: rotateY(-10deg) rotateZ(3deg); width: 83%; }
 .orbit-label { bottom: 3%; color: var(--brioche); font-family: var(--font-mono); font-size: 0.64rem; left: 2%; letter-spacing: 0.09em; line-height: 1.45; position: absolute; text-transform: uppercase; z-index: 2; }
 .orbit-dot { background: var(--ember); border-radius: 50%; box-shadow: 0 0 0 5px rgba(211, 38, 27, 0.15); height: 8px; position: absolute; width: 8px; z-index: 2; }
