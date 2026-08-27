@@ -41,34 +41,42 @@ const whatsappUrl = "https://wa.me/5542988124834";
 const burgers = [
   {
     number: "01",
-    name: "Barbecue",
-    copy: "Carne na brasa, molho barbecue intenso, bacon e camadas que deixam marca.",
-    image: ASSETS.barbecue,
-    alt: "Hambúrguer Barbecue da Mock Burguer com bacon, molho escuro e queijo.",
+    name: "Mock Burger",
+    ingredients: "Pão brioche, blend bovino 160g na brasa, queijo cheddar, alface, tomate e maionese da casa.",
+    description: "O hambúrguer perfeito para qualquer momento.",
+    price: "R$ 29,90",
+    image: ASSETS.classico,
+    alt: "Mock Burger da Mock Burguer com alface, tomate e queijo cheddar.",
     imagePosition: "50% center",
   },
   {
     number: "02",
-    name: "Supreme",
-    copy: "Duas carnes na brasa, queijo derretido e uma presença impossível de ignorar.",
-    image: ASSETS.supreme,
-    alt: "Hambúrguer Supreme da Mock Burguer com duas carnes e queijo derretido.",
+    name: "Mock Bacon",
+    ingredients: "Pão brioche, blend bovino 160g na brasa, queijo cheddar, bacon crocante e maionese da casa.",
+    description: "Simples, intenso e cheio de sabor.",
+    price: "R$ 32,90",
+    image: ASSETS.bacon,
+    alt: "Mock Bacon da Mock Burguer com bacon crocante e queijo cheddar.",
     imagePosition: "50% center",
   },
   {
     number: "03",
-    name: "Bacon",
-    copy: "Bacon crocante, queijo e carne na brasa para quem veio pelo excesso.",
-    image: ASSETS.bacon,
-    alt: "Hambúrguer Bacon da Mock Burguer com bacon crocante e queijo.",
+    name: "Mock BBQ",
+    ingredients: "Pão brioche, blend bovino 160g na brasa, queijo cheddar, molho barbecue e maionese da casa.",
+    description: "O sabor da brasa combinado com um toque agridoce irresistível.",
+    price: "R$ 33,90",
+    image: ASSETS.barbecue,
+    alt: "Mock BBQ da Mock Burguer com molho barbecue e queijo cheddar.",
     imagePosition: "50% center",
   },
   {
     number: "04",
-    name: "Clássico",
-    copy: "Carne na brasa, queijo, alface e tomate. O essencial feito sem atalhos.",
-    image: ASSETS.classico,
-    alt: "Hambúrguer Clássico da Mock Burguer com alface, tomate e queijo.",
+    name: "Mock Supremo",
+    ingredients: "Pão brioche, dois blends bovinos de 160g na brasa, duplo cheddar, bacon crocante, cebola caramelizada e maionese da casa.",
+    description: "Mais carne, mais queijo e o verdadeiro sabor da brasa.",
+    price: "R$ 44,90",
+    image: ASSETS.supreme,
+    alt: "Mock Supremo da Mock Burguer com duas carnes, bacon e duplo cheddar.",
     imagePosition: "50% center",
   },
 ];
@@ -213,7 +221,15 @@ export default function Home() {
                 transition={{ delay: index * 0.09, duration: 0.65, ease: [0.23, 1, 0.32, 1] }}
               >
                 <div className="card-image-wrap"><img src={burger.image} alt={burger.alt} loading="lazy" style={{ objectPosition: burger.imagePosition }} /><span>{burger.number}</span></div>
-                <div className="card-content"><h3>{burger.name}</h3><p>{burger.copy}</p><a href={whatsappUrl} target="_blank" rel="noreferrer">Pedir na brasa <ArrowUpRight size={17} /></a></div>
+                <div className="card-content">
+                  <h3>{burger.name}</h3>
+                  <p className="card-ingredients">{burger.ingredients}</p>
+                  <p className="card-description">{burger.description}</p>
+                  <div className="card-order">
+                    <strong>{burger.price}</strong>
+                    <a href={whatsappUrl} target="_blank" rel="noreferrer">Pedir <ArrowUpRight size={17} /></a>
+                  </div>
+                </div>
               </motion.article>
             ))}
           </div>

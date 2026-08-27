@@ -244,6 +244,21 @@ img { display: block; max-width: 100%; }
 .card-content { align-items: center; display: flex; flex-direction: column; text-align: center; }
 .card-content::before { left: 50%; transform: translateX(-50%); }
 .card-content a { justify-content: center; text-align: center; }
+.burger-deck { gap: clamp(1.15rem, 2.4vw, 2.4rem); grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 72rem; }
+.burger-deck::before { left: -2%; right: -2%; }
+.burger-deck::after { left: 5%; right: 5%; }
+.burger-card { display: flex; flex-direction: column; }
+.burger-card--1, .burger-card--3 { margin-top: 0.8rem; }
+.burger-card--2 { margin-top: -0.8rem; }
+.burger-card--4 { margin-top: 1.4rem; }
+.card-image-wrap { aspect-ratio: 1.22; }
+.card-content { flex: 1; padding: 1.55rem 1.65rem 1.35rem; width: 100%; }
+.card-ingredients { color: rgba(240, 214, 166, 0.78) !important; font-family: var(--font-mono); font-size: 0.68rem !important; letter-spacing: 0.012em; line-height: 1.65 !important; margin: 0.85rem 0 0.75rem !important; max-width: 28rem; }
+.card-description { color: var(--bone) !important; font-size: 0.92rem !important; line-height: 1.46 !important; margin: 0 0 1.2rem !important; max-width: 27rem; }
+.card-order { align-items: center; border-top: 1px solid rgba(181, 138, 60, 0.38); display: flex; justify-content: space-between; margin-top: auto; padding-top: 0.95rem; width: 100%; }
+.card-order strong { color: var(--flame); font-family: var(--font-display); font-size: 1.7rem; font-weight: 400; letter-spacing: 0.035em; line-height: 1; }
+.card-order a { color: var(--brioche); font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.card-order a:hover { color: var(--flame); }
 .ritual-list { text-align: center; }
 .ritual-item { align-items: center; display: flex; flex-direction: column; gap: 0.45rem; text-align: center; }
 .ritual-item > span { padding-top: 0; }
@@ -256,6 +271,15 @@ img { display: block; max-width: 100%; }
 .manifesto-body { margin-left: auto; margin-right: auto; }
 .manifesto-tags { justify-content: center; margin-left: auto; margin-right: auto; }
 .ingredient-orbit { align-self: center !important; justify-self: center !important; margin-left: auto; margin-right: auto; }
+
+@media (max-width: 860px) {
+  .burger-deck { grid-template-columns: 1fr; max-width: 32rem; }
+  .burger-deck::before { bottom: 0; height: 100%; left: 50%; right: auto; top: 0; transform: translateX(-50%); width: 2px; }
+  .burger-deck::after { display: none; }
+  .burger-card--1, .burger-card--2, .burger-card--3, .burger-card--4 { margin-top: 0; transform: none; }
+  .card-image-wrap { aspect-ratio: 1.24; }
+  .card-content { padding: 1.45rem 1.35rem 1.3rem; }
+}
 
 .manifesto-scene, .selections-scene, .gallery-scene { border-bottom: 1px solid rgba(211, 38, 27, 0.28); }
 .section-intro::after, .gallery-title::after { background: linear-gradient(90deg, transparent, var(--ember), transparent); content: ""; height: 1px; margin-top: 0.65rem; width: min(15rem, 42vw); }
@@ -275,6 +299,9 @@ img { display: block; max-width: 100%; }
   .gallery-title { margin-bottom: 2.2rem; }
   .gallery-title h2 { margin-top: 0; text-align: center; }
   .gallery-foot { align-items: center; }
+  .burger-card--1, .burger-card--2, .burger-card--3, .burger-card--4 { margin-top: 0; }
+  .card-ingredients { max-width: 25rem; }
+  .card-description { max-width: 23rem; }
 }
 
 @media (max-width: 560px) {

@@ -40,3 +40,25 @@
 - [x] Selecionar uma imagem de hero mais imponente que o item Bacon.
 - [x] Atualizar o hero com o novo retrato e ajustar seu enquadramento.
 - [x] Validar o hero revisado e sincronizar a alteração no GitHub.
+- [x] Criar o avatar da logo com fundo escuro de brasa para o Instagram.
+- [x] Validar e entregar o PNG de perfil atualizado.
+- [x] Preparar a referência fotográfica e o conceito da postagem criativa.
+- [x] Gerar a postagem de Instagram preservando identidade e produto.
+- [x] Validar e entregar o avatar e a postagem finalizados.
+- [x] Centralizar e redimensionar a logo do avatar de perfil.
+- [x] Validar e entregar o avatar de perfil corrigido.
+- [x] Recriar a postagem com fotografia dominante e linguagem editorial limpa.
+- [x] Reduzir textura decorativa e preservar identidade, produto e hierarquia da Mock Burguer.
+- [x] Validar e entregar a nova postagem profissional.
+- [x] Criar uma mensagem visual de combo na brasa sem preço ou condição não confirmada.
+- [x] Gerar e entregar a segunda postagem promocional para Instagram.
+- [ ] Criar um modelo vertical de Story para divulgar o combo na brasa.
+- [ ] Aplicar área segura e hierarquia adequada para controles do Instagram.
+- [ ] Entregar o Story finalizado.
+- [x] Criar a nova versão do Story com lata de Coca-Cola.
+- [x] Incluir o subtítulo de entrega em casa e entregar o arquivo final.
+- [x] Criar a versão de feed com cenário fotográfico vermelho e luzes amarelas.
+- [x] Entregar a arte de feed promocional atualizada.
+- [x] Estruturar os detalhes oficiais de Mock Burger, Mock Bacon, Mock BBQ e Mock Supremo.
+- [x] Redesenhar os cards para incluir ingredientes, descrição e preço.
+- [x] Validar o cardápio responsivo e sincronizar a revisão no GitHub.
