@@ -112,7 +112,7 @@
 - [x] Inventariar todos os ativos externos referenciados pelo site de produção.
 - [x] Arquivar no GitHub os ativos de produção que ainda não estejam preservados.
 - [x] Validar o build e documentar a recuperação autônoma do site.
-- [ ] Confirmar a sincronização final no GitHub e a publicação no Render.
+- [x] Confirmar a sincronização final no GitHub e a publicação no Render.
 - [ ] Definir dez frases e composições minimalistas para a série do Mock BBQ.
 - [ ] Gerar dez variações com foto e logo oficiais.
 - [ ] Validar e arquivar permanentemente as dez artes no GitHub.
