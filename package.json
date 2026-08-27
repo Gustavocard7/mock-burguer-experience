@@ -9,7 +9,9 @@
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "audit:assets": "node scripts/audit-production-assets.mjs",
+    "audit:release": "pnpm run audit:assets && pnpm run check && pnpm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
