@@ -9,15 +9,14 @@ import {
   Instagram,
   MessageCircle,
   MoveDown,
-  Sparkles,
 } from "lucide-react";
-import { useEffect, useState, type PointerEvent } from "react";
+import { useEffect, useState } from "react";
 
 const ASSETS = {
   logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/RZNTcgAefZbVtEOq.png",
   wordmark: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/yRgUuxWiBDcXDxzD.png",
   horn: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/UOVZjRhAthCOlrYX.png",
-  heroEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/wwwttXMjwieHwGgq.jpg",
+  heroEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/TxjfeDwpDgFWdggT.jpg",
   manifestoEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/gWdRSJWoybvghAnw.jpg",
   portal: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/fVhoOQlhWZGxoXVv.jpg",
   heroBurger: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/bTwhJlcTkXCqHieF.jpg",
@@ -94,37 +93,6 @@ function scrollToSection(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-function HeroDepthImage() {
-  const handlePointerMove = (event: PointerEvent<HTMLDivElement>) => {
-    const bounds = event.currentTarget.getBoundingClientRect();
-    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-    event.currentTarget.style.setProperty("--hero-rotate-y", `${x * 7}deg`);
-    event.currentTarget.style.setProperty("--hero-rotate-x", `${y * -5}deg`);
-    event.currentTarget.style.setProperty("--hero-shift", `${x * -12}px`);
-  };
-
-  const resetDepth = (event: PointerEvent<HTMLDivElement>) => {
-    event.currentTarget.style.setProperty("--hero-rotate-y", "0deg");
-    event.currentTarget.style.setProperty("--hero-rotate-x", "0deg");
-    event.currentTarget.style.setProperty("--hero-shift", "0px");
-  };
-
-  return (
-    <div
-      className="hero-product-stage"
-      onPointerMove={handlePointerMove}
-      onPointerLeave={resetDepth}
-      aria-label="Fotografia do hambúrguer em profundidade"
-    >
-      <div className="hero-product-shadow" aria-hidden="true" />
-      <img className="hero-product-image hero-product-image--supreme" src={ASSETS.supreme} alt="Hambúrguer Supreme da Mock Burguer com duas carnes e queijo derretido." />
-      <div className="hero-product-glow" aria-hidden="true" />
-      <span className="hero-product-note" aria-hidden="true"><Sparkles size={14} /> arraste o olhar</span>
-    </div>
-  );
-}
-
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const reducedMotion = useReducedMotion();
@@ -152,7 +120,6 @@ export default function Home() {
         <section id="topo" className="hero-scene" aria-labelledby="hero-heading">
           <img className="hero-environment" src={ASSETS.heroEnvironment} alt="" aria-hidden="true" />
           <div className="hero-shade" aria-hidden="true" />
-          <div className="hero-grid" aria-hidden="true" />
           <div className="hero-smoke-layer" aria-hidden="true">
             <span className="hero-smoke hero-smoke--one" />
             <span className="hero-smoke hero-smoke--two" />
@@ -181,12 +148,20 @@ export default function Home() {
               <button className="button-quiet" onClick={() => scrollToSection("selecoes")}>Ver as seleções <MoveDown size={17} /></button>
             </motion.div>
           </div>
-          <motion.div className="hero-product-wrap" initial={reducedMotion ? false : { opacity: 0, x: 36, scale: 0.97 }} animate={reducedMotion ? undefined : { opacity: 1, x: 0, scale: 1 }} transition={{ delay: 0.2, duration: 0.95, ease: [0.23, 1, 0.32, 1] }}>
-            <HeroDepthImage />
-          </motion.div>
           <button className="hero-scroll" onClick={() => scrollToSection("manifesto")} aria-label="Avançar para a essência">
             <span>desça para sentir</span><MoveDown size={18} />
           </button>
+        </section>
+
+        <section className="hero-photo-ticker" aria-label="Fotos dos hambúrgueres da Mock Burguer">
+          <div className="hero-photo-ticker-track">
+            {[...burgers, ...burgers].map((burger, index) => (
+              <figure className="hero-photo-ticker-item" key={`ticker-${burger.number}-${index}`} aria-hidden={index >= burgers.length}>
+                <img src={burger.image} alt={index < burgers.length ? burger.alt : ""} loading="lazy" style={{ objectPosition: burger.imagePosition }} />
+                <figcaption>{burger.name}</figcaption>
+              </figure>
+            ))}
+          </div>
         </section>
 
         <section className="marquee-bar" aria-label="Frase da marca">

@@ -71,3 +71,7 @@
 - [x] Conectar o botão principal a uma seção de cardápio completo para pedidos.
 - [x] Validar a experiência em desktop e mobile e sincronizar a atualização no GitHub.
 - [x] Confirmar o carregamento da versão pública atualizada sem cache do navegador.
+- [x] Criar uma imagem de hero em alta resolução com hambúrguer sendo preparado na churrasqueira.
+- [x] Aplicar uma sobreposição escura leve que preserve a leitura das mensagens do hero.
+- [x] Criar uma faixa contínua de fotos pequenas dos hambúrgueres acima da barra vermelha.
+- [x] Validar a nova abertura em desktop e mobile e sincronizar a atualização no GitHub.
