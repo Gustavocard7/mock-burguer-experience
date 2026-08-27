@@ -70,3 +70,4 @@
 - [x] Remover o painel retangular da foto de hero e integrar o produto ao fundo.
 - [x] Conectar o botão principal a uma seção de cardápio completo para pedidos.
 - [x] Validar a experiência em desktop e mobile e sincronizar a atualização no GitHub.
+- [x] Confirmar o carregamento da versão pública atualizada sem cache do navegador.
