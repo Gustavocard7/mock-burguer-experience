@@ -106,6 +106,9 @@
 - [x] Validar e arquivar permanentemente a plaquinha revisada no GitHub.
 - [x] Criar quatro fichas simples para Mock Burger, Mock Bacon, Mock BBQ e Mock Supremo.
 - [x] Validar e arquivar permanentemente as fichas de produto no GitHub.
+- [x] Criar quatro tickets de retirada: Clássico, Bacon, Barbecue e Supreme.
+- [x] Preparar uma folha de impressão com marcas de corte para a gráfica.
+- [x] Validar e arquivar permanentemente os tickets no GitHub.
 - [ ] Definir dez frases e composições minimalistas para a série do Mock BBQ.
 - [ ] Gerar dez variações com foto e logo oficiais.
 - [ ] Validar e arquivar permanentemente as dez artes no GitHub.
