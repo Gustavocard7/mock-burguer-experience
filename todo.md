@@ -91,6 +91,8 @@
 - [x] Criar uma composição limpa e minimalista com a foto real escolhida.
 - [x] Validar e arquivar permanentemente a nova arte no GitHub.
 - [x] Aplicar a logo oficial da Mock Burguer como assinatura discreta da arte.
+- [x] Criar uma postagem minimalista com a foto oficial do Mock BBQ.
+- [x] Validar e arquivar permanentemente a nova arte do Mock BBQ no GitHub.
 - [ ] Extrair os princípios reutilizáveis da criação e publicação da landing page.
 - [ ] Criar uma habilidade para sites imersivos adaptáveis a outros negócios.
 - [ ] Validar e instalar a habilidade reutilizável.
