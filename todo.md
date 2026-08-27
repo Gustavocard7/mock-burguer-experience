@@ -101,6 +101,9 @@
 - [x] Entregar as sete artes finais para publicação no feed.
 - [x] Criar uma plaquinha de pagamento com a identidade da Mock Burguer e o QR Code preservado.
 - [x] Verificar a leitura do QR Code e arquivar permanentemente a arte no GitHub.
+- [x] Reforçar a identidade visual da Mock Burguer na plaquinha de Pix.
+- [x] Ampliar o QR Code preservando margem de segurança e leitura.
+- [x] Validar e arquivar permanentemente a plaquinha revisada no GitHub.
 - [ ] Definir dez frases e composições minimalistas para a série do Mock BBQ.
 - [ ] Gerar dez variações com foto e logo oficiais.
 - [ ] Validar e arquivar permanentemente as dez artes no GitHub.
