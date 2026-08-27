@@ -75,3 +75,5 @@
 - [x] Aplicar uma sobreposição escura leve que preserve a leitura das mensagens do hero.
 - [x] Criar uma faixa contínua de fotos pequenas dos hambúrgueres acima da barra vermelha.
 - [x] Validar a nova abertura em desktop e mobile e sincronizar a atualização no GitHub.
+- [x] Ajustar o enquadramento da foto do hero para mobile, mantendo produto e texto em equilíbrio.
+- [x] Validar a nova composição mobile e sincronizar a atualização no GitHub.

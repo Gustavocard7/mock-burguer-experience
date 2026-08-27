@@ -382,3 +382,10 @@ img { display: block; max-width: 100%; }
   .hero-photo-ticker-item { flex-basis: 7.4rem; height: 4.45rem; }
   .hero-photo-ticker-item figcaption { font-size: 0.47rem; }
 }
+
+/* Recorte mobile do hero: aproxima o produto no eixo direito e mantém o bloco tipográfico no campo escuro. */
+@media (max-width: 560px) {
+  .hero-environment { object-position: 64% 54%; transform: scale(1.01); }
+  .hero-shade { background: radial-gradient(ellipse 74% 62% at 48% 47%, rgba(8, 5, 4, 0.78) 0%, rgba(8, 5, 4, 0.62) 54%, rgba(8, 5, 4, 0.16) 100%), linear-gradient(180deg, rgba(8, 5, 4, 0.58) 0%, transparent 48%, rgba(8, 5, 4, 0.58) 100%); }
+  .hero-copy { text-shadow: 0 3px 16px rgba(0, 0, 0, 0.76); }
+}
