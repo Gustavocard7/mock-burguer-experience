@@ -93,6 +93,8 @@
 - [x] Aplicar a logo oficial da Mock Burguer como assinatura discreta da arte.
 - [x] Criar uma postagem minimalista com a foto oficial do Mock BBQ.
 - [x] Validar e arquivar permanentemente a nova arte do Mock BBQ no GitHub.
+- [x] Definir e aplicar uma frase criativa no post minimalista do Mock BBQ.
+- [x] Validar e arquivar permanentemente a versão com frase no GitHub.
 - [ ] Extrair os princípios reutilizáveis da criação e publicação da landing page.
 - [ ] Criar uma habilidade para sites imersivos adaptáveis a outros negócios.
 - [ ] Validar e instalar a habilidade reutilizável.
