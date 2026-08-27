@@ -95,6 +95,14 @@
 - [x] Validar e arquivar permanentemente a nova arte do Mock BBQ no GitHub.
 - [x] Definir e aplicar uma frase criativa no post minimalista do Mock BBQ.
 - [x] Validar e arquivar permanentemente a versão com frase no GitHub.
+- [x] Definir a distribuição dos quatro sabores, frases e variações visuais da série de sete posts.
+- [x] Gerar sete posts com fotos e logo oficiais, evitando repetição de produto e composição.
+- [x] Validar e arquivar permanentemente a série de sete artes no GitHub.
+- [x] Entregar as sete artes finais para publicação no feed.
+- [ ] Definir dez frases e composições minimalistas para a série do Mock BBQ.
+- [ ] Gerar dez variações com foto e logo oficiais.
+- [ ] Validar e arquivar permanentemente as dez artes no GitHub.
+- [ ] Entregar a série completa para publicação no feed.
 - [ ] Extrair os princípios reutilizáveis da criação e publicação da landing page.
 - [ ] Criar uma habilidade para sites imersivos adaptáveis a outros negócios.
 - [ ] Validar e instalar a habilidade reutilizável.
