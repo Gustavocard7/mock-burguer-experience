@@ -62,3 +62,6 @@
 - [x] Estruturar os detalhes oficiais de Mock Burger, Mock Bacon, Mock BBQ e Mock Supremo.
 - [x] Redesenhar os cards para incluir ingredientes, descrição e preço.
 - [x] Validar o cardápio responsivo e sincronizar a revisão no GitHub.
+- [x] Criar o fundo contínuo de churrasqueira em brasas com área segura para a mensagem.
+- [x] Integrar o cenário gerado ao hero e ajustar o contraste do texto.
+- [x] Validar o hero revisado e sincronizar a atualização no GitHub.

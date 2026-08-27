@@ -17,7 +17,7 @@ const ASSETS = {
   logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/RZNTcgAefZbVtEOq.png",
   wordmark: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/yRgUuxWiBDcXDxzD.png",
   horn: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/UOVZjRhAthCOlrYX.png",
-  heroEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/bnikgKRyTCAwHhUa.jpg",
+  heroEnvironment: "/manus-storage/mock-hero-churrasqueira-brasas_bd607154.jpg",
   manifestoEnvironment: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/gWdRSJWoybvghAnw.jpg",
   portal: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/fVhoOQlhWZGxoXVv.jpg",
   heroBurger: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663044373020/bTwhJlcTkXCqHieF.jpg",

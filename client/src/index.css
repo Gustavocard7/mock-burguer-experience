@@ -72,6 +72,7 @@ img { display: block; max-width: 100%; }
 /* Hero */
 .hero-scene { display: grid; isolation: isolate; min-height: 100svh; overflow: hidden; padding: 8.8rem clamp(1.25rem, 7vw, 8.2rem) 4rem; position: relative; }
 .hero-environment, .closing-environment { height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; z-index: -3; }
+.hero-environment { filter: saturate(0.94) contrast(1.06); object-position: center 55%; transform: scale(1.02); }
 .hero-shade { background: linear-gradient(90deg, rgba(14, 10, 8, 0.96) 0%, rgba(14, 10, 8, 0.83) 37%, rgba(14, 10, 8, 0.33) 73%, rgba(14, 10, 8, 0.68) 100%), linear-gradient(0deg, rgba(14, 10, 8, 0.66) 0%, transparent 35%); inset: 0; position: absolute; z-index: -2; }
 .hero-grid { background-image: linear-gradient(rgba(240, 214, 166, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(240, 214, 166, 0.04) 1px, transparent 1px); background-size: 5rem 5rem; inset: 0; mask-image: linear-gradient(90deg, #000 0%, transparent 75%); opacity: 0.36; position: absolute; z-index: -1; }
 .hero-copy { align-self: center; max-width: 37rem; padding-bottom: 1rem; position: relative; z-index: 2; }
@@ -185,7 +186,7 @@ img { display: block; max-width: 100%; }
 .nav-wordmark img { height: auto; object-fit: contain; width: clamp(7.6rem, 10vw, 10.8rem); }
 
 .hero-scene { align-items: center; display: flex; flex-direction: column; padding: 9.1rem 1.25rem 4rem; text-align: center; }
-.hero-shade { background: linear-gradient(180deg, rgba(14, 10, 8, 0.94) 0%, rgba(14, 10, 8, 0.54) 52%, rgba(14, 10, 8, 0.9) 100%); }
+.hero-shade { background: linear-gradient(180deg, rgba(14, 10, 8, 0.86) 0%, rgba(14, 10, 8, 0.28) 49%, rgba(14, 10, 8, 0.76) 100%), linear-gradient(90deg, rgba(14, 10, 8, 0.3), transparent 63%, rgba(14, 10, 8, 0.24)); }
 .hero-copy { align-items: center; display: flex; flex-direction: column; margin-inline: auto; max-width: 44rem; text-align: center; width: min(100%, 44rem); }
 .hero-logo { margin-left: 0; }
 .hero-copy h1 { margin-inline: auto; max-width: 9.8ch; text-align: center; }
