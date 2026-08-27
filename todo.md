@@ -87,6 +87,10 @@
 - [x] Gerar a arte de feed com produto, brasa e identidade da Mock Burguer.
 - [x] Arquivar permanentemente a arte de feed no acervo privado do GitHub.
 - [x] Entregar a postagem final para publicação.
+- [x] Selecionar uma fotografia oficial de lanche para a nova postagem de feed.
+- [x] Criar uma composição limpa e minimalista com a foto real escolhida.
+- [x] Validar e arquivar permanentemente a nova arte no GitHub.
+- [x] Aplicar a logo oficial da Mock Burguer como assinatura discreta da arte.
 - [ ] Extrair os princípios reutilizáveis da criação e publicação da landing page.
 - [ ] Criar uma habilidade para sites imersivos adaptáveis a outros negócios.
 - [ ] Validar e instalar a habilidade reutilizável.
