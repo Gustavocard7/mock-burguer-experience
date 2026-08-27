@@ -83,3 +83,14 @@
 - [x] Criar um fundo de labaredas de fogo com área segura para o manifesto.
 - [x] Substituir o cenário metálico da seção de manifesto pelo fundo de fogo.
 - [x] Validar o manifesto com fogo em desktop e mobile e sincronizar a atualização no GitHub.
+- [x] Definir a narrativa da postagem minimalista para o feed.
+- [x] Gerar a arte de feed com produto, brasa e identidade da Mock Burguer.
+- [x] Arquivar permanentemente a arte de feed no acervo privado do GitHub.
+- [x] Entregar a postagem final para publicação.
+- [ ] Extrair os princípios reutilizáveis da criação e publicação da landing page.
+- [ ] Criar uma habilidade para sites imersivos adaptáveis a outros negócios.
+- [ ] Validar e instalar a habilidade reutilizável.
+- [ ] Mapear o fluxo de atendimento comercial no WhatsApp e os dados necessários para cada pedido.
+- [ ] Preparar catálogo, mensagens de entrada, respostas rápidas e fechamento padronizado.
+- [ ] Definir o registro diário de pedidos e o resumo de operação.
+- [ ] Atualizar os links de pedido do site para iniciar o atendimento guiado.
