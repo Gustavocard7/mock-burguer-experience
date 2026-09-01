@@ -126,3 +126,6 @@
 - [ ] Preparar catálogo, mensagens de entrada, respostas rápidas e fechamento padronizado.
 - [ ] Definir o registro diário de pedidos e o resumo de operação.
 - [ ] Atualizar os links de pedido do site para iniciar o atendimento guiado.
+- [x] Vincular o domínio personalizado mockburguer.online ao projeto publicado.
+- [x] Configurar e validar os registros DNS necessários na GoDaddy para mockburguer.online.
+- [ ] Confirmar certificado SSL e acesso por mockburguer.online.
