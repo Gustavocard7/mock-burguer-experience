@@ -133,3 +133,6 @@
 - [ ] Validar e arquivar a nova arte do clássico no GitHub.
 - [x] Alterar exclusivamente o nome do produto Mock Burger para Mock Clássico no site.
 - [x] Validar e publicar somente essa alteração textual.
+- [ ] Auditar aplicação e acervo de ativos para mudanças locais pendentes.
+- [ ] Sincronizar todas as alterações recentes com os repositórios privados no GitHub.
+- [ ] Confirmar branches alinhados e histórico íntegro.
