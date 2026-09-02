@@ -43,7 +43,7 @@ const orderUrl = (burgerName: string) =>
 const burgers = [
   {
     number: "01",
-    name: "Mock Burger",
+    name: "Mock Clássico",
     ingredients: "Pão brioche, blend bovino 160g na brasa, queijo cheddar, alface, tomate e maionese da casa.",
     description: "O hambúrguer perfeito para qualquer momento.",
     price: "R$ 29,90",

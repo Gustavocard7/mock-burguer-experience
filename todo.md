@@ -129,3 +129,7 @@
 - [x] Vincular o domínio personalizado mockburguer.online ao projeto publicado.
 - [x] Configurar e validar os registros DNS necessários na GoDaddy para mockburguer.online.
 - [ ] Confirmar certificado SSL e acesso por mockburguer.online.
+- [ ] Criar postagem minimalista do Mock Burger clássico com churrasqueira e brasa em fogo.
+- [ ] Validar e arquivar a nova arte do clássico no GitHub.
+- [x] Alterar exclusivamente o nome do produto Mock Burger para Mock Clássico no site.
+- [x] Validar e publicar somente essa alteração textual.
