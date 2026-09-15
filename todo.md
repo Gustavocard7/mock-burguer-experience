@@ -140,3 +140,5 @@
 - [x] Consolidar qualquer imagem ou material ainda fora do repositório privado de ativos.
 - [x] Enviar aplicação, acervo e documentação aos branches principais do GitHub.
 - [x] Verificar alinhamento remoto e possibilidade de recuperação independente.
+- [x] Remover exclusivamente a cebola caramelizada da descrição do Mock Supremo.
+- [x] Validar, publicar e sincronizar a correção no GitHub.

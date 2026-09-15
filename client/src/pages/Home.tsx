@@ -74,7 +74,7 @@ const burgers = [
   {
     number: "04",
     name: "Mock Supremo",
-    ingredients: "Pão brioche, dois blends bovinos de 160g na brasa, duplo cheddar, bacon crocante, cebola caramelizada e maionese da casa.",
+    ingredients: "Pão brioche, dois blends bovinos de 160g na brasa, duplo cheddar, bacon crocante e maionese da casa.",
     description: "Mais carne, mais queijo e o verdadeiro sabor da brasa.",
     price: "R$ 44,90",
     image: ASSETS.supreme,
