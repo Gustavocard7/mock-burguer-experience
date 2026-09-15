@@ -136,3 +136,7 @@
 - [x] Auditar aplicação e acervo de ativos para mudanças locais pendentes.
 - [x] Sincronizar todas as alterações recentes com os repositórios privados no GitHub.
 - [x] Confirmar branches alinhados e histórico íntegro.
+- [x] Auditar todos os arquivos locais, imagens e referências usadas pela aplicação.
+- [x] Consolidar qualquer imagem ou material ainda fora do repositório privado de ativos.
+- [x] Enviar aplicação, acervo e documentação aos branches principais do GitHub.
+- [x] Verificar alinhamento remoto e possibilidade de recuperação independente.
